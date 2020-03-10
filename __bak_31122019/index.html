@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qbq0gsx.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+
+    <title>BabyClub</title>
+</head>
+<body>
+<div class="mobile-menu">
+    <a href="#" class="menu-btn">
+        <span></span>
+    </a>
+</div>
+
+
+
+
+<div class="mobile-menu__menu-header-wrap">
+    <div class="menu-logo-container">
+    <div class="menu-logo"></div>
+    </div>
+    <ul class="mobile-menu__menu-header-text">
+        <li><a href="#anch1" class="mobile-menu__menu-link">О клубе</a></li>
+        <li><a href="#anch2" class="mobile-menu__menu-link">Занятия</a></li>
+        <li><a href="#anch3" class="mobile-menu__menu-link">Цены</a></li>
+        <li><a href="#anch4" class="mobile-menu__menu-link">Педагоги</a></li>
+        <li><a href="#anch5" class="mobile-menu__menu-link">Фото</a></li>
+        <li><a href="#anch6" class="mobile-menu__menu-link">Видео</a></li>
+        <li><a href="#anch8" class="mobile-menu__menu-link" id="contact">Контакты</a></li>
+    </ul>
+    <button class="menu-header-button mobile">
+        <a class="btn trigger" href="#"> Заказать звонок</a>
+    </button>
+</div>
+<div class="main">
+    <div class="circleOrange"></div>
+    <div class="circleRed"></div>
+    <div class="header">
+        <div class="contact-header">
+            <div class="contact-header-about">
+                <p>г.Уфа, ул.Коммунистическая, д.83</p>
+                <p>info@babyclubufa.ru</p>
+                <p>+7 (915) 654 6646</p>
+            </div>
+            <div class="contact-header-icon">
+                <a href="#"> <img src="img/facebook2.png"></a>
+                <a href="#"><img src="img/instagram2.png"></a>
+                <a href="#"><img src="img/vk2.png"></a>
+            </div>
+        </div>
+        <div class="menu-header main-grid">
+            <div class="menu-header-content">
+                <div class="wrap-logo"></div>
+                <div class="menu-header-wrap">
+
+
+                    <ul class="menu-header-text">
+                        <li><a href="#anch1" class="menu-link">О клубе</a></li>
+                        <li><a href="#anch2" class="menu-link">Занятия</a></li>
+                        <li><a href="#anch3" class="menu-link">Цены</a></li>
+                        <li><a href="#anch4" class="menu-link">Педагоги</a></li>
+                        <li><a href="#anch5" class="menu-link">Фото</a></li>
+                        <li><a href="#anch6" class="menu-link">Видео</a></li>
+                        <li><a href="#anch7" class="menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="menu-header-imageOrange">
+
+                </div>
+            </div>
+            <div class="menu-header-button-container">
+                <button class="menu-header-button">
+                    <a class="btn trigger" href="#"> Заказать звонок</a>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="careful-dev main-grid">
+            <div class="careful-dev-grid">
+                <div class="careful-dev-content">
+                    <div class="tittle"><h2>Бережное развитие интеллекта<br> с 8 месяцев до 7 лет</h2></div>
+                    <p class="descriptionUP">Сделай вклад в счастье своего ребенка</p>
+                    <div class="page-wrapper">
+                        <button class="record-button" id="butt">
+                            <a class="btn trigger" href="#">Записаться</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- МОДАЛЬНОЕ ОКНО-->
+        <div class="modal-wrapper">
+            <div class="head"></div>
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="good-job">
+                        <h2 style="padding: 30px 0 15px;color: black;margin: 0;font-size: 26px;">Заказать звонок</h2>
+                        <form class="form_modal_window" action="">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="phone" name="phone" placeholder="Ваш телефон" required>
+                            <textarea type="text" name="textmessage" placeholder="Комментарий"></textarea>
+                            <input class="form_sub" name="sub" type="submit" value="ОТПРАВИТЬ">
+                        </form>
+                        <div id="erconts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-baby">
+
+
+            <div class="bantImg"></div>
+            <div class="L_image"></div>
+            <div class="get-baby-zagolovok-content" id="anch1">Что получит ваш<br> ребенок?</div>
+            <div class="get-baby-content">
+
+                <div class="slider">
+
+                    <div class="slider__wrapper" style="
+    display: flex" ;>
+                        <a href="#id-1" class="slider__item">
+                            <div class="get-baby-content__card orange">
+                                <div class="get-baby-content__card icon_intelect"></div>
+                                <div class="get-baby-content__card_tittle">Развитие интелекта
+                                </div>
+                                <div class="get-baby-content__card_text"><p>Развиваем интеллектуальные
+                                    и познавательные способности
+                                    малышей с учетом
+                                    психологических особенностей
+                                    каждого ребенка - это наш метод
+                                    бережного развития интеллекта</p></div>
+                            </div>
+                        </a>
+                        <a href="#id-2" class="slider__item">
+                            <div class="get-baby-content__card blue">
+                                <div class="get-baby-content__card icon_study"></div>
+                                <div class="get-baby-content__card_tittle">Интерес к учебе
+                                </div>
+                                <div class="get-baby-content__card_text">
+                                    <p>Для каждого возраста мы
+                                        выбираем именно те задания,
+                                        которые способствуют
+                                        комплексному и гармоничному
+                                        развитию. Ребята с удовольствием
+                                        привыкают выполнять всё
+                                        самостоятельно, поэтому и в
+                                        школе помогать с домашним заданием им не придётся</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="#id-3" class="slider__item">
+                            <div class="get-baby-content__card miniCard">
+                                <div class="get-baby-content__card icon_speak"></div>
+                                <div class="get-baby-content__card_tittleMini">Навык общения</div>
+                            </div>
+                        </a>
+                        <a href="#id-4" class="slider__item">
+                            <div class="get-baby-content__card miniCard">
+                                <div class="get-baby-content__card icon_unique"></div>
+                                <div class="get-baby-content__card_tittleMini">Уникальные методики</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="get-baby-paginator-container">
+                <div class="get-baby-paginator">
+                    <div class="get-baby-paginator__digit">
+                        01
+                    </div>
+                    <div class="get-baby-paginator__line">
+                        <div class="get-baby-paginator__line__filler"></div>
+                    </div>
+
+                    <div class="get-baby-paginator__button-left">
+                    </div>
+
+                    <div class="get-baby-paginator__button-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-left"></div>
+        <div class="dots-right"></div>
+
+
+        <div class="exactly-babyClub-zagolovok main-grid">
+
+            <div class="exactly-babyClub-zagolovok-content" id="anch2">Почему именно<br> Бэби-клуб Кремль?</div>
+
+
+        </div>
+
+        <div class="exactly-babyCLub  main-grid">
+
+            <div class="exactly-babyClub-card-entry">
+                <div class="birdImg"></div>
+                <div class="exactly-babyClub-card">
+
+                    <div class="exactly-babyClub-card-content exactly-card1 animated zoomIn" >
+                        <div class="exactly-babyClub-card-content-zag">
+                            <h3>Гарантия результата</h3>
+                        </div>
+                        <div class="exactly-babyClub-card-content-text">
+                            <p>Не следует, однако, забывать о том, что начало повседневной работы по формированию
+                                позиции
+                                способствует повышению актуальности экономической целесообразности принимаемых
+                                решений?</p>
+                            <div class="page-wrapper">
+                                <button class="record-button">
+                                    <a class="btn trigger" href="#">Записаться</a>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="exactly-babyClub-card-image exactly-image1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="exactly-babyClub-footer  main-grid">
+            <div class="exactly-babyClub-footer-line"></div>
+            <div class="exactly-babyClub-footer-content">
+                <div class="exactly-babyClub-footericons icon1" style="display: block;">
+                    <div class="exactly-babyClub-footericons__active icon1-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon2">
+                    <div class="exactly-babyClub-footericons__active icon2-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon3">
+                    <div class="exactly-babyClub-footericons__active icon3-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon4">
+                    <div class="exactly-babyClub-footericons__active icon4-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon5">
+                    <div class="exactly-babyClub-footericons__active icon5-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon6">
+                    <div class="exactly-babyClub-footericons__active icon6-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon7">
+                    <div class="exactly-babyClub-footericons__active icon7-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon8">
+                    <div class="exactly-babyClub-footericons__active icon8-active">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="developing-activ main-grid">
+            <div class="child-img"></div>
+            <div class="dots-img"></div>
+            <div class="ballsBig-img"></div>
+            <div class="ballsSmall-img"></div>
+            <div class="letter-img"></div>
+            <div class="developing-activ-content">
+
+                <div class="developing-cards">
+                    <div class="developing-activ-tittle" id="anch3">Развивающие занятия<br>
+                        для детей
+                    </div>
+                    <div class="developing-card card-1">
+                        <div class="developing-card-img card1"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Бэбик</div>
+                            <div class="card-text">Повседневная практика показывает, что консультация с профессионалами
+                                из IT требует определения и уточнения соответствующих условий активизации. Равным
+                                образом социально-экономическое развитие требует определения и уточнения системы
+                                обучения кадров, соответствующей насущным потребностям? С другой стороны рамки и место
+                                обучения кадров представляет собой интересный эксперимент.
+                            </div>
+                            <div class="card-foot">2700 р/месяц</div>
+                        </div>
+                    </div>
+                    <div class="developing-card card-2">
+                        <div class="developing-card-img card2"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Малыш</div>
+                            <div class="card-text">Повседневная практика показывает, что консультация с профессионалами
+                                из IT требует определения и уточнения соответствующих условий активизации. Равным
+                                образом социально-экономическое развитие требует определения и уточнения системы
+                                обучения кадров, соответствующей насущным потребностям? С другой стороны рамки и место
+                                обучения кадров представляет собой интересный эксперимент.
+                            </div>
+                            <div class="card-foot">2700 р/месяц</div>
+                        </div>
+                    </div>
+                    <div class="developing-card card-3">
+                        <div class="developing-card-img card3"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Супер-малыш</div>
+                            <div class="card-text">Повседневная практика показывает, что консультация с профессионалами
+                                из IT требует определения и уточнения соответствующих условий активизации. Равным
+                                образом социально-экономическое развитие требует определения и уточнения системы
+                                обучения кадров, соответствующей насущным потребностям? С другой стороны рамки и место
+                                обучения кадров представляет собой интересный эксперимент.
+                            </div>
+                            <div class="card-foot">2700 р/месяц</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="educators-tittle-block main-grid">
+            <div class="educators-tittle-block-content">
+                <div class="redballIMG"></div>
+                <div class="squrImg"></div>
+                <div class="educators-tittle-block-tittle" id="anch4">Родители каждый день<br>
+                    доверяют нам своих детей
+                </div>
+
+                <div class="educators-tittle-block-text">Не следует, однако, забывать о том, что начало повседневной
+                    работы
+                    по формированию позиции способствует повышению актуальности экономической целесообразности
+                    принимаемых
+                    решений? С другой стороны новая модель организационной деятельности обеспечивает актуальность
+                    ключевых
+                </div>
+            </div>
+
+        </div>
+
+        <div class="educators-content main-grid">
+
+            <div class="educators-content-cards">
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard1"></div>-->
+                    <img class="educators-content-card-image " src="img/Nelly.png">
+
+                    <div class="educators-content-card-name">Нелли</div>
+                    <div class="educators-content-card-description">Старший воспитатель. Выпускница
+                        БГПУ с красным дипломом.
+                    </div>
+                </div>
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard2"></div>-->
+                    <img class="educators-content-card-image" src="img/Diana.png">
+                    <div class="educators-content-card-name">Диана</div>
+                    <div class="educators-content-card-description">Преподаватель английского языка,
+                        с большим опыт работы в Европе.
+                    </div>
+                </div>
+                <div class="educators-content-card green">
+                    <!--<div class="educators-content-card-image Edcard3"></div>-->
+
+                    <img class="educators-content-card-image" src="img/Nailya.png">
+
+                    <div class="educators-content-card-name">Найля</div>
+                    <div class="educators-content-card-description">Помощник воспитателя.</div>
+                </div>
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard4"></div>-->
+                    <img class="educators-content-card-image" src="img/Marina.png">
+
+                    <div class="educators-content-card-name">Марина</div>
+                    <div class="educators-content-card-description">Воспитатель младшей группы.
+                        Выпускница БГУ.
+                    </div>
+                </div>
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard5"></div>-->
+                    <img class="educators-content-card-image" src="img/Nina.png">
+
+                    <div class="educators-content-card-name">Нина</div>
+                    <div class="educators-content-card-description">Воспитатель средней группы.
+                        Выпускница СГПА.
+                    </div>
+                </div>
+                <div class="educators-content-card green">
+                    <!--<div class="educators-content-card-image Edcard6"></div>-->
+                    <img class="educators-content-card-image" src="img/ice.png">
+                    <div class="educators-content-card-name">Айсылу</div>
+                    <div class="educators-content-card-description">Преподаватель вокала и
+                        изобразительного искусства.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bright-moments main-grid">
+        <div class="AngImg"></div>
+        <div class="brightCircle"></div>
+        <div class="bright-moments-tittle-block-content" id="anch5">Яркие моменты из жизни<br>
+            Бэби-Клуба Кремль
+
+        </div>
+        <div class="moments-dots"></div>
+
+    </div>
+    <div class="my-slider animated rollIn">
+
+    </div>
+
+    <div class="my-slider-paginator-container">
+
+        <div class="my-slider-paginator">
+            <div class="my-slider-paginator__digit">
+                01
+            </div>
+            <div class="my-slider-paginator__line">
+                <div class="my-slider-paginator__line__filler"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="video main-grid">
+        <div class="video-tittle" id="anch6">Видео с наших мероприятий
+            <div class="VideoImg"></div>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-grid__preview">
+                <div class="video1">
+                </div>
+                <div class="video2">
+                </div>
+                <div class="video3">
+                </div>
+                <div class="video3">
+                </div>
+                <div class="video3">
+                </div>
+            </div>
+
+            <div class="video-grid__video">
+                <iframe src="https://www.youtube.com/embed/4KE6Kg4FB84" frameborder="0"
+                        class="video-grid__video__content"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+            <div class="video-ball"></div>
+            <div class="video-dots"></div>
+        </div>
+
+    </div>
+    <div class="excursion main-grid">
+        <div class="tigerImg"></div>
+        <div class="excursion-tittle"></div>
+
+    </div>
+    <div class="excursion-frame maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1573807484976!6m8!1m7!1sCAoSLEFGMVFpcE9iVThlTllVREk4UEV1SUZXTjRvOUpLMjBOWTZIRENxcjVKV05S!2m2!1d54.72412606!2d55.95805496!3f141.37731993889744!4f2.0200775043068404!5f0.4000000000000002"
+                width="1920" height="814" frameborder="0" scrolling="no" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="reviews main-grid">
+        <div class="reviews-tittle">
+            Отзывы и рекомендации
+        </div>
+        <div class="Contacts-tittle-dots-left"></div>
+        <div class="reviewsCircle"></div>
+        <div class="reviews-content">
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img alina"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Иванова Алина</div>
+                        <div class="card-head-date">25 августа 2019</div>
+
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden"> Повседневная практика показывает, что консультация с
+                    профессионалами из IT требует определения и уточнения соответствующих условий активизации. Равным
+                    образом социально-экономическое развитие требует определения и уточнения системы обучения кадров,
+                    соответствующей насущным потребностям? С другой стороны рамки и место обучения кадров представляет
+                    собой интересный эксперимент проверки ключевых компонентов планируемого обновления.Равным образом
+                    социально-экономическое развитие требует определения и уточнения системы обучения кадров,
+                    соответствующей насущным потребностям? С другой стороны рамки и место обучения кадров представляет
+                    собой интересный эксперимент проверки ключевых компонентов планируемого обновления.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img masha"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name"> Магадеева Маша</div>
+                        <div class="card-head-date">25 августа 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Повседневная практика показывает, что консультация с профессионалами из IT требует определения и
+                    уточнения соответствующих условий активизации. Равным образом социально-экономическое развитие
+                    требует определения и уточнения системы обучения кадров, соответствующей насущным потребностям? С
+                    другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки
+                    ключевых компонентов
+                </div>
+            </div>
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img darya"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Петрова Дарья</div>
+                        <div class="card-head-date">25 августа 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Повседневная практика показывает, что консультация с профессионалами из IT требует определения и
+                    уточнения соответствующих условий активизации. Равным образом социально-экономическое развитие
+                    требует определения и уточнения системы обучения кадров, соответствующей насущным потребностям? С
+                    другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки
+                    ключевых компонентов
+                </div>
+            </div>
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img darya"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Петрова Дарья</div>
+                        <div class="card-head-date">25 августа 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Повседневная практика показывает, что консультация с профессионалами из IT требует определения и
+                    уточнения соответствующих условий активизации. Равным образом социально-экономическое развитие
+                    требует определения и уточнения системы обучения кадров, соответствующей насущным потребностям? С
+                    другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки
+                    ключевых компонентов
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="contacts main-grid" id="anch7">
+        <div class="contacts-tittle">
+            Контакты
+        </div>
+        <div class="contacts-head" >
+            <div class="Contacts-dots-left"></div>
+            <div class="Contacts-dots-right"></div>
+            <div class="reviews-letter-img"></div>
+            <div class="contacts-header-about-item addr">
+                <img class="contact-geo" src="img/geo.svg"><strong>Адрес:</strong> г.Уфа, ул.Коммунистическая, д.83
+            </div>
+            <div class="contacts-header-about-item phone"><img src="img/phone.svg"> <strong>Телефон:</strong>+7 (915) 654
+                6646
+            </div>
+            <div class="contacts-header-about-item mail"><img id="contact-mail" src="img/mail.svg">
+                <strong>E-mail:</strong>
+                info@babyclubufa.ru
+            </div>
+            <div class="contacts-header-icon">
+                <a href="#"> <img src="img/fb.svg"></a>
+                <a href="#"><img src="img/inst.svg"></a>
+                <a href="#"><img src="img/vk.svg"></a>
+            </div>
+
+            <div class="menu-header-button-container">
+                <button class="menu-header-button contact-button">
+                    <a class="btn trigger" href="#"> Заказать звонок</a>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="yaand">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4698b125bc05255eb4ecebed57a29c43aa89eb7647ab32c0ef7d1e27e2736bc1&amp;width=100%25&amp;height=539&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    <div class="footer main-grid">
+        <div class="whtrbt"><img src="img/whtrbt-logo.svg"></a>
+            <div class="footer-text"> © 2019. «Бэби-клуб» — сеть клубов раннего развития <a href="#">Политика
+                Конфиденциальности</a></div>
+        </div>
+
+
+    </div>
+
+    <div class="footer-mobile main-grids ">
+        <div class="footer-logo-container" id="anch8">
+            <div class="footer-logo"></div>
+        </div>
+        <div id="mobilefooter" class="mobile-footer">
+        <div class="mobile-footer-about-item addr">
+            <img class="contact-geo" src="img/geo.svg">Адрес: г.Уфа,<br> ул.Коммунистическая, д.83
+        </div>
+        <div class="mobile-footer-about-item phone"><img src="img/phone.svg">Телефон: +7 (915) 654
+            6646
+        </div>
+        <div class="mobile-footer-about-item mail"><img id="contact-mail" src="img/mail.svg">
+          E-mail: info@babyclubufa.ru
+        </div>
+
+            <div class="footerImg" id="fImg"></div>
+
+    </div>
+
+    </div>
+</div>
+<a href="header" class="scrollup">Наверх</a>
+
+
+<script src="main.js"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript" src="/sys/jquery.touchSwipe.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+
+
+        $('.form_sub').click(function () {
+            $.ajax({
+                type: "POST", //указываем что метод отправки POST
+                url: "form.php", // указываем адрес обработчика
+                data: $('.form_modal_window').serialize(), //указываем данные которые будут передаваться обработчику
+                /* Мы указываем id формы - $('#callbacks'), и методом serialize() забираем значения всех полей. */
+                error: function () {
+                    $("#erconts").html("Произошла ошибка!");
+                },
+                /* если произойдет ошибка в элементе с id erconts выведется сообщение*/
+                beforeSend: function () {
+                    $("#erconts").html("<p style='color: orangered;'>Отправляем данные...</p>");
+                },
+                success: function (result) {
+                    /* В случае удачной обработки и отправки выполнится следующий код*/
+                    $('#erconts').html(result);
+                    checkThis();
+                }
+            });
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
+

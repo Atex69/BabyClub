@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipeLabs.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qbq0gsx.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="/fav.png"/>
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=e444a4f8-07a7-443c-91fc-f70b77b990f5&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map ("map", {
+                center: [54.723983, 55.957846],
+                zoom: 17
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+
+
+            myPlacemark = new ymaps.Placemark([54.723983, 55.957846],{}, {
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/fav.png',
+                // Размеры метки.
+                iconImageSize: [40, 40]
+
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    <title>BabyClub</title>
+</head>
+<body>
+<div class="mobile-menu">
+    <a href="#" class="menu-btn">
+        <span></span>
+    </a>
+</div>
+
+
+
+
+<div class="mobile-menu__menu-header-wrap">
+    <div class="menu-logo-container">
+    <div class="menu-logo"></div>
+    </div>
+    <ul class="mobile-menu__menu-header-text">
+        <li><a href="#anch1" class="mobile-menu__menu-link">О клубе</a></li>
+        <li><a href="#anch2" class="mobile-menu__menu-link">Занятия</a></li>
+        <li><a href="#anch3" class="mobile-menu__menu-link">Цены</a></li>
+        <li><a href="#anch4" class="mobile-menu__menu-link">Педагоги</a></li>
+        <li><a href="#anch5" class="mobile-menu__menu-link">Фото</a></li>
+        <li><a href="#anch6" class="mobile-menu__menu-link">Видео</a></li>
+        <li><a href="#anch8" class="mobile-menu__menu-link" id="contact">Контакты</a></li>
+    </ul>
+    <button class="menu-header-button mobile">
+        <a class="btn trigger" href="#"> Заказать звонок</a>
+    </button>
+</div>
+<div class="modal-wrapper">
+    <div class="head"></div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="good-job">
+                <h2 style="padding: 30px 0 15px;color: black;margin: 0;font-size: 26px;">Заказать звонок</h2>
+                <form class="form_modal_window" id="mailForm" action="">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <input type="phone" id="phone" name="phone" placeholder="Ваш телефон" required>
+                    <textarea type="text" id="message" name="textmessage" placeholder="Комментарий"></textarea>
+                    <button class="form_sub" type="button" id="submit">Записаться</button>
+
+                </form>
+                <div id="erconts"></div>
+            </div>
+
+        </div>
+
+        <div class="politic">Нажимая кнопку отправить вы соглашаетесь<a class="triggerPol" href="#"> с политикой конфиденциальности</a></div>
+
+    </div>
+    <div class="modalGood">
+        <div class="modalGood-content">
+            <div class="good-job">
+                <h2 style="padding: 50px 0px 0px 0px;color: black;margin: 0;font-size: 26px;">Спасибо</h2><br>
+                <h2 style="padding: 0px 0px 27px 0px;color: black;margin: 0;font-size: 26px;">Ваша заявка принята</h2>
+                <div class="modalGoodImg"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="modals-wrap">
+
+    <div class="modalPol">
+        <div class="modalPol-content">
+            <div class="modalPol-contentGood">
+                <div class="headPol">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+
+                </div>
+                Настоящая Политика конфиденциальности персональных данных (далее - Политика конфиденциальности) действует в отношении всей информации, размещенной на сайте в сети Интернет по адресу: baby-club.ru (далее - Сайт), которую ООО «Бэби-клуб», партнеры компании «Бэби-клуб», иные лица, могут получить о Пользователе во время использования Сайта, его сервисов, программ и продуктов.
+
+                Использование сервисов Сайта означает безоговорочное согласие Пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с этими условиями Пользователь должен воздержаться от использования сервисов.
+                <br>
+                <h3>ОБЩИЕ ПОЛОЖЕНИЯ</h3><br>
+                1.1. В рамках настоящей Политики под персональной информацией Пользователя понимаются:<br>
+                1.1.1. Персональная информация, которую Пользователь предоставляет о себе самостоятельно при регистрации (создании учетной записи) или в процессе использования Сервисов, включая персональные данные Пользователя. Обязательная для предоставления Сервисов информация помечена специальным образом. Иная информация предоставляется Пользователем на его усмотрение.<br>
+
+                1.1.2. Данные, которые автоматически передаются сервисам Сайта в процессе их использования с помощью установленного на устройстве Пользователя программного обеспечения, в том числе IP-адрес, данные файлов cookie, информация о браузере Пользователя (или иной программе, с помощью которой осуществляется доступ к сервисам), технические характеристики оборудования и программного обеспечения, используемых Пользователем, дата и время доступа к сервисам, адреса запрашиваемых страниц и иная подобная информация.<br>
+
+                1.1.3. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на Сайте и могут включать в себя следующую информацию:<br>
+
+                фамилию, имя, отчество Пользователя;<br>
+                контактный телефон Пользователя;<br>
+                адрес электронной почты (e-mail);<br>
+                место жительство Пользователя.<br>
+                1.1.4. Настоящая Политика конфиденциальности применяется только к Сайту baby-club.ru. Сайт baby-club.ru не контролирует и не несет ответственности за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте baby-club.ru<br>
+
+                <h3>ЦЕЛИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ</h3><br>
+                2.1. Сайт собирает и хранит только ту персональную информацию, которая необходима для предоставления сервисов или исполнения соглашений и договоров с Пользователем, за исключением случаев, когда законодательством предусмотрено обязательное хранение персональной информации в течение определенного законом срока.<br>
+                2.2. Персональную информацию Пользователя Сайт обрабатывает в следующих целях:<br>
+
+                2.2.1. Идентификации Пользователя для заключения договора оказания услуг, договора купли-продажи товара дистанционным способом, проведения маркетинговых мероприятий и исследований.<br>
+
+                2.2.2. Предоставления Пользователю доступа к персонализированным ресурсам Сайта.<br>
+
+                2.2.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта, оказания услуг, обработку запросов и заявок от Пользователя.<br>
+
+                2.2.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.<br>
+
+                2.2.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.<br>
+
+                2.2.6. Создания учетной записи для оказания услуг, если Пользователь дал согласие на создание учетной записи.<br>
+
+                2.2.7. Уведомления Пользователя Сайта о перечне оказываемых услуг.<br>
+
+                2.2.8. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием Сайта.<br>
+
+                2.2.9. Осуществления рекламной деятельности с согласия Пользователя.<br>
+
+                2.2.10. Предоставления доступа Пользователю на сайты или сервисы партнеров Бэби-клуба с целью получения продуктов, обновлений и услуг.<br>
+
+                <h3>УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ И ЕЕ ПЕРЕДАЧИ ТРЕТЬИМ ЛИЦАМ</h3><br>
+                3.1. Сайт хранит персональную информацию Пользователей в соответствии с внутренними регламентами конкретных сервисов.<br>
+                3.2. В отношении персональной информации Пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления Пользователем информации о себе для общего доступа неограниченному кругу лиц. При использовании отдельных сервисов Пользователь соглашается с тем, что определенная часть его персональной информации становится общедоступной.<br>
+
+                3.3. Сайт вправе передать персональную информацию Пользователя третьим лицам в следующих случаях:<br>
+
+                3.3.1. Пользователь выразил согласие на такие действия.<br>
+
+                3.3.2. Передача необходима для использования Пользователем определенного сервиса либо для исполнения определенного соглашения или договора с Пользователем.<br>
+
+                3.3.3. Передача осуществляется Партнеру Бэби-клуба в рамках заключенного Лицензионного договора или Договора коммерческой концессии (франшизы) или проекта / сервиса, осуществляемого под руководством компании «Бэби-клуб».<br>
+
+                3.3.4. Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры.<br>
+
+                3.3.5. В случае продажи Сайта к приобретателю переходят все обязательства по соблюдению условий настоящей Политики применительно к полученной им персональной информации.<br>
+
+                3.4. Обработка персональных данных Пользователя осуществляется без ограничения срока любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств. Обработка персональных данных Пользователей осуществляется в соответствии с Федеральным законом от 27.07.2006 N 152-ФЗ «О персональных данных».<br>
+
+                3.5. При утрате или разглашении персональных данных Администрация Сайта информирует Пользователя об утрате или разглашении персональных данных.<br>
+
+                3.6. Администрация Сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.<br>
+
+                3.7. Администрация Сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.<br>
+
+                3.8. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.<br>
+
+                <h3>ОБЯЗАТЕЛЬСТВА СТОРОН</h3><br>
+                4.1. Пользователь обязан:<br>
+                4.1.1. Предоставить информацию о персональных данных, необходимую для пользования Сайтом.<br>
+
+                4.1.2. Обновлять, дополнять предоставленную информацию о персональных данных в случае изменения данной информации.<br>
+
+                4.2. Администрация Сайта обязана:<br>
+
+                4.2.1. Использовать полученную информацию исключительно для целей, указанных в настоящей Политике конфиденциальности.<br>
+
+                4.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением предусмотренных настоящей Политикой конфиденциальности.<br>
+
+                4.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемому для защиты такого рода информации в существующем деловом обороте.<br>
+
+                4.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки в случае выявления недостоверных персональных данных или неправомерных действий.<br>
+
+                <h3>ОТВЕТСТВЕННОСТЬ СТОРОН</h3><br>
+                5.1. Администрация Сайта, не исполнившая свои обязательства, несет ответственность за убытки, понесенные Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации.<br>
+                5.2. В случае утраты или разглашения конфиденциальной информации Администрация Сайта не несет ответственности, если данная конфиденциальная информация:<br>
+
+                5.2.1. Стала публичным достоянием до ее утраты или разглашения.<br>
+
+                5.2.2. Была получена от третьей стороны до момента ее получения Администрацией Сайта.<br>
+
+                5.2.3. Была разглашена с согласия Пользователя.<br>
+
+                <h3>РАЗРЕШЕНИЕ СПОРОВ</h3>
+                6.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем Сайта и Администрацией Сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).<br>
+                6.2. Получатель претензии в течение 30 календарных дней со дня получения претензии письменно уведомляет заявителя претензии о результатах рассмотрения претензии.<br>
+
+                6.3. При недостижении соглашения спор будет передан на рассмотрение в суд в соответствии с действующим законодательством Российской Федерации.<br>
+
+                6.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией Сайта применяется действующее законодательство Российской Федерации.<br>
+
+                <h3>ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</h3><br>
+                7.1. Администрация Сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.<br>
+                7.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.<br>
+
+                7.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует направлять по электронному адресу: welcome@baby-club.ru.<br>
+
+                7.4. Действующая Политика конфиденциальности размещена на странице по адресу: baby-club.ru.<br>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="circleOrange"></div>
+    <div class="circleRed"></div>
+    <div class="header">
+        <div class="contact-header">
+            <div class="contact-header-about">
+                <p>г.Уфа, ул.Коммунистическая, д.83</p>
+                <p><a href="mailto:ufa.kreml@gmail.com<">ufa.kreml@gmail.com</a></p>
+                <p class="number"><a href="tel:+7 (987) 090 90 97">+7 (987) 090 90 97</a></p>
+            </div>
+            <div class="contact-header-icon">
+                <a href="https://www.instagram.com/babyclub.ufa.kreml/" target="_blank"><img src="img/instagram2.png"></a>
+                <a href="https://vk.com/babyclubufa" target="_blank"><img src="img/vk2.png"></a>
+            </div>
+        </div>
+        <div class="menu-header main-grid">
+            <div class="menu-header-content">
+                <div class="wrap-logo"></div>
+                <div class="menu-header-wrap">
+
+
+                    <ul class="menu-header-text">
+                        <li><a href="#anch1" class="menu-link">О клубе</a></li>
+                        <li><a href="#anch2" class="menu-link">Занятия</a></li>
+                        <li><a href="#anch3" class="menu-link">Цены</a></li>
+                        <li><a href="#anch4" class="menu-link">Педагоги</a></li>
+                        <li><a href="#anch5" class="menu-link">Фото</a></li>
+                        <li><a href="#anch6" class="menu-link">Видео</a></li>
+                        <li><a href="#anch7" class="menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="menu-header-imageOrange">
+
+                </div>
+            </div>
+            <div class="menu-header-button-container">
+                <button class="menu-header-button">
+                    <a class="btn trigger" href="#"> Заказать звонок</a>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="careful-dev main-grid">
+            <div class="careful-dev-grid">
+                <div class="careful-dev-content">
+                    <div class="tittle"><h2>Бережное развитие интеллекта<br> с 8 месяцев до 7 лет</h2></div>
+
+                    <p class="descriptionUP">Сделай вклад в счастье своего ребенка</p>
+                    <div class="page-wrapper">
+                        <button class="record-button" id="butt">
+                            <a class="btn trigger" href="#">Записаться</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="eskomoImg"></div>
+        </div>
+
+
+
+
+        <!-- МОДАЛЬНОЕ ОКНО-->
+
+
+
+
+        <div class="get-baby">
+
+
+            <div class="bantImg"></div>
+            <div class="L_image"></div>
+            <div class="get-baby-zagolovok-content" id="anch1">Что получит ваш<br> ребенок?</div>
+            <div class="get-baby-content">
+
+                <div class="slider">
+
+                    <div class="slider__wrapper" style="
+    display: flex" ;>
+                        <a href="#id-1" class="slider__item">
+                            <div class="get-baby-content__card orange">
+                                <div class="get-baby-content__card icon_intelect"></div>
+                                <div class="get-baby-content__card_tittle">Развитие интелекта
+                                </div>
+                                <div class="get-baby-content__card_text"><p>Развиваем интеллектуальные
+                                    и познавательные способности
+                                    малышей с учетом
+                                    психологических особенностей
+                                    каждого ребенка - это наш метод
+                                    бережного развития интеллекта</p></div>
+                            </div>
+                        </a>
+                        <a href="#id-2" class="slider__item">
+                            <div class="get-baby-content__card blue">
+                                <div class="get-baby-content__card icon_study"></div>
+                                <div class="get-baby-content__card_tittle">Интерес к учебе
+                                </div>
+                                <div class="get-baby-content__card_text">
+                                    <p>Для каждого возраста мы
+                                        выбираем именно те задания,
+                                        которые способствуют
+                                        комплексному и гармоничному
+                                        развитию. Ребята с удовольствием
+                                        привыкают выполнять всё
+                                        самостоятельно, поэтому и в
+                                        школе помогать с домашним заданием им не придётся</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="#id-3" class="slider__item">
+                            <div class="get-baby-content__card miniCard">
+                                <div class="get-baby-content__card icon_speak"></div>
+                                <div class="get-baby-content__card_tittleMini">Навык общения</div>
+                            </div>
+                        </a>
+                        <a href="#id-4" class="slider__item">
+                            <div class="get-baby-content__card miniCard">
+                                <div class="get-baby-content__card icon_unique"></div>
+                                <div class="get-baby-content__card_tittleMini">Уникальные методики</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="get-baby-paginator-container">
+                <div class="get-baby-paginator">
+                    <div class="get-baby-paginator__digit">
+                        01
+                    </div>
+                    <div class="get-baby-paginator__line">
+                        <div class="get-baby-paginator__line__filler"></div>
+                    </div>
+
+                    <div class="get-baby-paginator__button-left">
+                    </div>
+
+                    <div class="get-baby-paginator__button-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-left"></div>
+        <div class="dots-right"></div>
+
+
+        <div class="exactly-babyClub-zagolovok main-grid">
+
+            <div class="exactly-babyClub-zagolovok-content" id="anch2">Почему именно<br> Бэби-клуб Кремль?</div>
+
+
+        </div>
+
+        <div class="exactly-babyCLub  main-grid">
+
+            <div class="exactly-babyClub-card-entry">
+                <div class="birdImg"></div>
+                <div class="exactly-babyClub-card">
+
+                    <div class="exactly-babyClub-card-content exactly-card1 animated zoomIn" >
+                        <div class="exactly-babyClub-card-content-zag">
+                            <h3>Уютная атмосфера</h3>
+                        </div>
+                        <div class="exactly-babyClub-card-content-text">
+                            <p>У нас красивый и яркий клуб, где дети, родители и специалисты чувствуют себя безопасно и уютно, так как наш клуб находится под постоянной охраной и оборудован новейшей системой видеонаблюдения. Для удобстве ожидания предусмотрены родительские комнаты, где можно попить чай, кофе и просто почитать.</p>
+                            <div class="page-wrapper">
+                                <button class="record-button">
+                                    <a class="btn trigger" href="#">Записаться</a>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="exactly-babyClub-card-image exactly-image1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="exactly-babyClub-footer  main-grid">
+            <div class="exactly-babyClub-footer-line"></div>
+            <div class="exactly-babyClub-footer-content">
+                <div class="exactly-babyClub-footericons icon1" style="display: block;">
+                    <div class="exactly-babyClub-footericons__active icon1-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon2">
+                    <div class="exactly-babyClub-footericons__active icon2-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon3">
+                    <div class="exactly-babyClub-footericons__active icon3-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon4">
+                    <div class="exactly-babyClub-footericons__active icon4-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon5">
+                    <div class="exactly-babyClub-footericons__active icon5-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon6">
+                    <div class="exactly-babyClub-footericons__active icon6-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon7">
+                    <div class="exactly-babyClub-footericons__active icon7-active">
+
+                    </div>
+                </div>
+                <div class="exactly-babyClub-footericons icon8">
+                    <div class="exactly-babyClub-footericons__active icon8-active">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exactly-babyClub-footerPagiContainer">
+            <div class="exactly-babyClub-footerPagi">
+
+
+
+            <div class="exactly-babyClub-footer-button-left"></div>
+            <div class="exactly-babyClub-footer-button-right"></div>
+            </div>
+        </div>
+        <div class="developing-activ main-grid">
+            <div class="child-img"></div>
+            <div class="dots-img"></div>
+            <div class="ballsBig-img"></div>
+            <div class="ballsSmall-img"></div>
+            <div class="letter-img"></div>
+            <div class="developing-activ-content">
+
+                <div class="developing-cards">
+                    <div class="developing-activ-tittle" id="anch3">Развивающие занятия<br>
+                        для детей
+                    </div>
+                    <div class="developing-card card-1">
+                        <div class="developing-card-img card1"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Бэбик (от 8 месяцев до 3 лет)</div>
+                            <div class="card-text">Главная задача этого возраста — социализация. Малыши учатся общаться с другими детьми, учатся делиться, увеличивают словарный запас, знакомятся с цифрами и буквами, всё новое ребята узнают в коротких играх, которые чередуются с не менее увлекательными переменками. Малыши с удовольствием пробуют работать с различными материалами для творчества. На каждом занятии мы слушаем классическую музыку, так как музыкальный вкус начинает формироваться в раннем возрасте.
+
+                            </div>
+                            <div class="card-foot">3600 р/месяц
+
+                                <div class="cardFootBtn">
+                                    <a class="trigger" href="#">Записаться</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="developing-card card-2">
+                        <div class="developing-card-img card2"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Бэбик класс (от 3 лет до 7 лет)</div>
+                            <div class="card-text">Для каждого возраста мы выбираем именно те задания, которые способствуют комплексному и гармоничному развитию. Ребята приобретают уверенность в себе и оттачивают навыки публичного выступления, которые так пригодятся в жизни. Они с привыкают выполнять всё самостоятельно и с удовольствием, поэтому и в школе помогать с домашними заданиями им не придется. Наши выпускники с легкостью считают, складывают и вычитают большие числа, бегло читают, имеют широкий кругозор и всестороннюю интеллектуальную подготовку. </div>
+                            <div class="card-foot">3800 р/месяц
+                                <div class="cardFootBtn">
+                                    <a class="trigger" href="#">Записаться</a>
+                                </div></div>
+                        </div>
+                    </div>
+                    <div class="developing-card card-3">
+                        <div class="developing-card-img card3"></div>
+                        <div class="developing-card-text">
+                            <div class="card-tittle">Доп. дисциплины (любой возраст)</div>
+                            <div class="card-text">
+                                <ul>
+                               <li> Мини сад;</li>
+                                <li> Английский язык;</li>
+                                <li>Китайский язык;</li>
+                               <li> LEGO программирование;</li>
+                               <li> Чтение;</li>
+                                <li>Ментальная арифметика;</li>
+                               <li> Вокал;</li>
+                               <li> Шахматы;</li>
+                               <li> Песочная анимация;</li>
+                               <li> Мы помогаем детям выражать себя через понравившееся ему направление.</li>
+                                </ul>
+                            </div>
+                            <div class="card-foot">2000 р/месяц
+                                <div class="cardFootBtn">
+                                    <a class="trigger" href="#">Записаться</a>
+                                </div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="educators-tittle-block main-grid">
+            <div class="educators-tittle-block-content">
+                <div class="redballIMG"></div>
+                <div class="squrImg"></div>
+                <div class="educators-tittle-block-tittle" id="anch4">Родители каждый день<br>
+                    доверяют нам своих детей
+                </div>
+
+                <div class="educators-tittle-block-text">У нас вы можете со спокойной душой оставить своего ребёнка. Его образованием и развитием будут заниматься профессионалы. Малыш станет самостоятельным с бережной помощью наших педагогов и будет иметь высокую мотивацию к учебе.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="educators-content main-grid">
+
+            <div class="educators-content-cards">
+
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard3"></div>-->
+
+                    <img class="educators-content-card-image" src="img/guz.png">
+
+                    <div class="educators-content-card-name">Гузель</div>
+                    <div class="educators-content-card-description">Владелец клуба. Выпускница БГПУ им. М.Аккмуллы, и Института комерции и права.
+                    </div>
+                </div>
+
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard2"></div>-->
+                    <img class="educators-content-card-image" src="img/nel.png">
+                    <div class="educators-content-card-name">Нэлли</div>
+                    <div class="educators-content-card-description">Исполнительный директор. Специалист развивающих занятий, педагог по ментальной арифметике. Имеет три высших образования с красным дипломом.
+                    </div>
+                </div>
+
+                <div class="educators-content-card green">
+                    <!--<div class="educators-content-card-image Edcard1"></div>-->
+                    <img class="educators-content-card-image " src="img/aic.png">
+
+                    <div class="educators-content-card-name">Айсылу</div>
+                    <div class="educators-content-card-description">Старший воспитатель. Выпускница
+                        БГПУ с красным дипломом.
+                    </div>
+                </div>
+
+
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard5"></div>-->
+                    <img class="educators-content-card-image" src="img/17.png">
+
+                    <div class="educators-content-card-name">Роксана</div>
+                    <div class="educators-content-card-description">Владелец клуба. Выпускница БГПУ им. М.Аккмуллы, и Института комерции и права.
+                    </div>
+                </div>
+
+
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard2"></div>-->
+                    <img class="educators-content-card-image" src="img/irina.png">
+                    <div class="educators-content-card-name">Ирина</div>
+                    <div class="educators-content-card-description">Специалист развивающих занятий. Учитель-логопед. Педагог по робототехнике. Выпускница Московского социально-педагогического института, с красным дипломом.
+                    </div>
+                </div>
+
+                <div class="educators-content-card green">
+                    <!--<div class="educators-content-card-image Edcard2"></div>-->
+                    <img class="educators-content-card-image" src="img/16.png">
+                    <div class="educators-content-card-name">Наиля</div>
+                    <div class="educators-content-card-description">Преподаватель китайского языка. Выпускница БашГУ с красным дипломом. Выпускница Institute of International Education, Liaioning University. Многолетняя практика в Азии.
+                    </div>
+                </div>
+
+
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard3"></div>-->
+
+                    <img class="educators-content-card-image" src="img/elena.png">
+
+                    <div class="educators-content-card-name">Елена</div>
+                    <div class="educators-content-card-description">Специалист развивающих занятий. Преподаватель Бэби-чтение. Выпускница БГПУ им. М.Аккмуллы с красным дипломом. Имеет самый большой стаж работы с детьми.</div>
+                </div>
+
+
+
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard6"></div>-->
+                    <img class="educators-content-card-image" src="img/yul.png">
+                    <div class="educators-content-card-name">Юлия</div>
+                    <div class="educators-content-card-description">Помощник специалиста. Педагог по вокалу. Выпускница РГИ им. Газиза Салиховича для одаренных детей, Уфимского УИ. Владелица вокальной студии Tselischeva music studio.
+                    </div>
+                </div>
+
+                <div class="educators-content-card green">
+                    <!--<div class="educators-content-card-image Edcard1"></div>-->
+                    <img class="educators-content-card-image " src="img/aza.png">
+
+                    <div class="educators-content-card-name">Азалия</div>
+                    <div class="educators-content-card-description">Помощник специалиста. Выпускница БГПУ им. М.Аккмуллы. Педагог по английскому и французском языку.
+                    </div>
+                </div>
+
+
+
+                <div class="educators-content-card blue">
+                    <!--<div class="educators-content-card-image Edcard3"></div>-->
+
+                    <img class="educators-content-card-image" src="img/ale.png">
+
+                    <div class="educators-content-card-name">Алена</div>
+                    <div class="educators-content-card-description">Администратор. Выпускница ИжГТУ с красным дипломом.</div>
+                </div>
+
+
+
+                <div class="educators-content-card orange">
+                    <!--<div class="educators-content-card-image Edcard1"></div>-->
+                    <img class="educators-content-card-image " src="img/ant.png">
+
+                    <div class="educators-content-card-name">Антонина</div>
+                    <div class="educators-content-card-description">Администратор. Выпускница УГАТУ с красным дипломом. Педагог по английскому языку, диплом переводчика
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="bright-moments main-grid">
+        <div class="AngImg"></div>
+        <div class="brightCircle"></div>
+        <div class="bright-moments-tittle-block-content" id="anch5">Яркие моменты из жизни<br>
+            Бэби-Клуба Кремль
+
+        </div>
+        <div class="moments-dots"></div>
+
+    </div>
+    <div class="my-slider animated rollIn">
+
+    </div>
+
+    <div class="my-slider-paginator-container">
+
+        <div class="my-slider-paginator">
+            <div class="my-slider-paginator__digit">
+                01
+            </div>
+            <div class="my-slider-paginator__line">
+                <div class="my-slider-paginator__line__filler"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="video main-grid">
+        <div class="video-tittle" id="anch6">Видео с наших мероприятий
+            <div class="VideoImg"></div>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-grid__preview">
+                <div class="video1">
+                </div>
+                <div class="video2">
+                </div>
+                <div class="video3">
+                </div>
+            </div>
+
+            <div class="video-grid__video">
+                <iframe src="https://www.youtube.com/embed/KrRsbxfwOZM" frameborder="0"
+                        class="video-grid__video__content"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+
+
+
+
+
+            <div class="video-ball"></div>
+            <div class="video-dots"></div>
+        </div>
+
+    </div>
+    <div class="excursion main-grid">
+        <div class="tigerImg"></div>
+        <div class="excursion-tittle"></div>
+
+    </div>
+
+
+    <div class="excursion-frame maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1573807484976!6m8!1m7!1sCAoSLEFGMVFpcE9iVThlTllVREk4UEV1SUZXTjRvOUpLMjBOWTZIRENxcjVKV05S!2m2!1d54.72412606!2d55.95805496!3f141.37731993889744!4f2.0200775043068404!5f0.4000000000000002"
+                width="1920" height="814" frameborder="0" scrolling="no" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="reviews main-grid">
+        <div class="reviews-tittle">
+            Отзывы и рекомендации
+        </div>
+        <div class="Contacts-tittle-dots-left"></div>
+        <div class="reviewsCircle"></div>
+        <div class="reviews-content">
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img alina"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name"> Ирина Морозова</div>
+                        <div class="card-head-date">20 июля 2019</div>
+
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden"> Прекрасное место где комфортно и детям и родителям! 👍🏻Внимательный, вежливый персонал , к детям относятся очень хорошо !очень интересная , разнообразная программа , ребёнок уходит из бэби клуба довольный и счастливый , и ждёт занятий снова , а это главное !!! Огромное спасибо всей команде , БЭБИ-КЛУБ Кремль
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img masha"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name"> Натали Зубаирова</div>
+                        <div class="card-head-date">03 августа 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Ходим в бэби-клуб уже полгода, очень довольны . Ребёнок развивается , учится общаться в социуме. Прекрасные педагоги . Айсылу мой сын просто обожает. Нравится, что практически нет текучки в группе. Устоявшийся коллектив. Спасибо Бэби-клуб за все
+                </div>
+            </div>
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img darya"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Лейла Тихоненко</div>
+                        <div class="card-head-date">15 августа 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Всей душой любим это место! Хотя ребёнку только 1,2, мы уже давно ходим на занятия, причём сыну очень нравится! Отличный персонал, приветливые руководители, отлично оборудованные кабинеты!
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img renata"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Рената Бадретдинова</div>
+                        <div class="card-head-date">10 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Бэби клуб отличное место для детей. Очень уютно , приветливый и добрый персонал. Детям нравятся занятия. Все грамотно и интересно.
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg1"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Алина Шарипова-Ибрагимова</div>
+                        <div class="card-head-date">13 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Бэби клуб, это действительно бережное развитие интеллекта. Немаловажную роль для нас играет месторасположение. Очень доброжелательный персоналВсе грамотно и интересно.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg2"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Анна Рахимкулова</div>
+                        <div class="card-head-date">14 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Почему мы выбрали для своего малыша Бэби клуб? Доброжелательный, профессиональный преподавательский состав. Чистые, просторные, яркие помещения для занятий. Современные методики обучения. Были всей семьей на Празднике двора, который клуб проводит бесплатно для всех желающий, остались в восторге! Все грамотно и интересно.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg3"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Лена Луговая</div>
+                        <div class="card-head-date">17 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Это место мы полюбили с первого раза 😊 посещали занятия бэби класс, сейчас ждём место в детском саду. Посещали курсом соляную пещеру, отмечали дни рождения и бывали на праздниках от клуба. Все очень понравилось, ребёнок ходит туда с радостью. Воспитатели очень внимательные стараются найти подход к каждому малышу, никто не остаётся без внимания 😊
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg4"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">​Елена Каширина</div>
+                        <div class="card-head-date">17 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Садик очень хороший! Дочке 2 года и 10 месяцев, ходит с удовольствием, вечером уходить домой не хочет) Воспитатели добрые, вежливые и отзывчивые! Большое спасибо за ваш труд!
+
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg5"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Райса Халиуллина</div>
+                        <div class="card-head-date">22 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    По совету подруги узнали об этом садике, она всегда говорила про Беби-клуб , когда шла речь о садиках. Опытные воспитатели, индивидуальный подход к каждому, очень интересные занятия, здоровое питание -все это про Беби-клуб! Нам очень нравится. В беби клубе есть даже соляная комната! Можно записаться на бесплатную экскурсию, все расскажут и покажут.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg6"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Гузель Римовна</div>
+                        <div class="card-head-date">25 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Узнали об открытии детского сада, по флаеру в парке Гафури. С тех пор просто ждали открытия Бэби-клуба. Ходим второй год. Безумны рады, что наши ожидания в самом начале оправдались. Ребенок с утра, просыпаясь, спрашивает, в садик пойдем? и с криком :Ура! С радостью бежит одеваться. Чуткое внимание, профессиональный подход, развивающие занятия, даже соляная пещера рядом.. Все для нас: родителей и детей. Приходите и убедитесь в этом сами?
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg7"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Альфия Нагимова</div>
+                        <div class="card-head-date">26 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Обойдя множество развиваек по всему городу, выбор остановили на Бэбиклубе. Отличный клуб: специалисты нашли подход к ребёнку, так, что он привязался и с удовольствием начал ходить, заниматься. Понравилось на развивающих занятиях так, что перешли к ним в детский сад. Адаптация прошла быстро и мягко, хотя ребёнок изначально был сильно привязан ко мне. Результаты занятий налицо.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg8"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Юлия Казакова</div>
+                        <div class="card-head-date">30 сентября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Очень хорошее место для развития вашего ребёнка
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg9"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Юлия Мальцева</div>
+                        <div class="card-head-date">02 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Прекрасный детский клуб, ребенок бежит туда с удовольствием! Занятия проходят интересно, девочки-преподаватели находят подход ко всем малышам, очень добрые, профессионалы своего дела. Мамы (пока ждут детей) могут выпить кофе, в коридоре висят огромные экраны, видно чем занимаются малыши) Ходим уже 9 месяцев)
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg10"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">​Гузель Юничева</div>
+                        <div class="card-head-date">05 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Нравится ребенку очень. Занимаемся 4 месяца. Устраивает все - начиная с атмосферы и оформления в клубе, заканчивая внимательным и бережным отношением нашего педагога и ее помошницы и вообще персонала в целом!
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg11"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Гульнара Кутлуева</div>
+                        <div class="card-head-date">08 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Ходим в Бэби клуб на занятия! Очень все нравится, подходо к обучению, ненавязчивость педагогов! Все как и должно быть! Дети учатся, играя! Очень очень очень довольны!!! И теперь советую всем мамочкам!
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg12"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Юлия Красильникова</div>
+                        <div class="card-head-date">11 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Мой ребёнок ходит сюда в садик уже полгода. Очень доволен и ходит с удовольствием, хотя он очень привязан к нам, и его всегда было трудно с кем-то оставить, потому что требовал родителей. А в саду он как будто вообще про нас забывает, очень насыщенно и интересно у него проходит день.
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg13"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">Елена Белякова</div>
+                        <div class="card-head-date">16 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    Искала для ребёнка ценр раннего развития и остановилась на Бэби-Клуб. Понравилось очень! Все от замечательных педагогов до бытовых условий.За полтора часа ребенок успел посчитать, покататься на горке, попеть, потанцевать, выполнить много интересных заданий, сделать поделку, сказать речь в микрофон со сцены )). Педагоги работают с удовольствием, очень доброжелательны и к детям и родителям.
+                    В бытовом плане тоже все отлично, просторная комната для родителей. Красивая, хорошо оборудованная учебная комната. В общем впечателния остались самые положительные. Результат очевиден - ребёнок многому научился благодаря вам. Огромное спасибо за вашу работу и процветания Вам!
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg14"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">​Светлана Иванова</div>
+                        <div class="card-head-date">20 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    5 звёзд однозначно. Дети довольны предки счастливы. 😁
+                </div>
+            </div>
+
+            <div class="reviews-content-card">
+                <div class="reviews-content-card-head">
+                    <div class="card-head-img cardImg15"></div>
+                    <div class="card-head-text">
+                        <div class="card-head-name">
+                            ​Гюльзар Аскерова</div>
+                        <div class="card-head-date">25 октября 2019</div>
+                    </div>
+                    <div class="card-head-expand">развернуть</div>
+                </div>
+                <div class="reviews-content-card-content hidden">
+                    В восторге от занятий, от преподавателей, считаем , что незаменимые занятия для деток дошкольного возраста! Ходим с 7 месяцев!
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="contacts main-grid" id="anch7">
+        <div class="contacts-tittle">
+            Контакты
+        </div>
+
+        <div class="contacts-head" >
+            <div class="Contacts-dots-left"></div>
+            <div class="Contacts-dots-right"></div>
+            <div class="reviews-letter-img"></div>
+            <div class="contacts-header-about-item addr">
+                <img class="contact-geo" src="img/geo.svg"><strong>Адрес:</strong> г.Уфа, ул.Коммунистическая, д.83
+            </div>
+            <div class="contacts-header-about-item phone"><img src="img/phone.svg"> <strong>Телефон:</strong><p class="numberWhite"><a href="tel:+7 (987) 090 90 97">+7 (987) 090 90 97</a></p>
+            </div>
+            <div class="contacts-header-about-item mail"><img id="contact-mail" src="img/mail.svg">
+                <strong>E-mail:</strong>
+                <p><a href="mailto:ufa.kreml@gmail.com<">ufa.kreml@gmail.com</a></p>
+            </div>
+            <div class="contacts-header-icon">
+                <a href="https://www.instagram.com/babyclub.ufa.kreml/" target="_blank"><img src="img/inst.svg"></a>
+                <a href="https://vk.com/babyclubufa" target="_blank"><img src="img/vk.svg"></a>
+            </div>
+
+            <div class="menu-header-button-container">
+                <button class="menu-header-button contact-button">
+                    <a class="btn trigger" href="#"> Заказать звонок</a>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="yaand">
+        <div id="map" style="width: 100%; height: 550px"></div>
+    </div>
+    <div class="footer main-grid">
+        <div class="whtrbt"><a href="https://whtrbbt.com/"  target="_blank"> <img src="img/whtrbt-logo.svg"></a>
+            <div class="footer-text">&copy;2019-<script>
+                document.write(new Date().getFullYear()+ " ");
+            </script>«Бэби-клуб» — сеть клубов раннего развития <a class="triggerPol" href="#">Политика
+                Конфиденциальности</a></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer-mobile main-grids ">
+        <div class="footer-logo-container" id="anch8">
+            <div class="footer-logo"></div>
+        </div>
+        <div id="mobilefooter" class="mobile-footer">
+        <div class="mobile-footer-about-item addr">
+            <img class="contact-geo" src="img/geo.svg">Адрес: г.Уфа,<br> ул.Коммунистическая, д.83
+        </div>
+        <div class="mobile-footer-about-item phone"><img src="img/phone.svg">Телефон:<p class="number"><a href="tel:+7 (987) 090 90 97">+7 (987) 090 90 97</a></p>
+        </div>
+        <div class="mobile-footer-about-item mail">
+            <a href="https://www.instagram.com/babyclub.ufa.kreml/" target="_blank" style="
+    width: 19%;
+"><img src="img/inst.svg"></a>
+            <a href="https://vk.com/babyclubufa" target="_blank" style="
+    width: 19%;
+"><img src="img/vk.svg"></a>
+        </div>
+
+            <a href="https://whtrbbt.com/"  target="_blank"><div class="footerImg" id="fImg"></div></a>
+
+    </div>
+
+    </div>
+</div>
+<a href="header" class="scrollup">Наверх</a>
+
+<script src="main.js"></script>
+<script src="mailto.js"></script>
+<script src="jquery.maskedinput.min.js"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+</body>
+</html>
+

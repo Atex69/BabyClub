@@ -1,0 +1,1165 @@
+
+@media (max-width: 1420px){
+    .letter-img, .dots-img,
+    .redballIMG, .squrImg, .moments-dots, .video-dots,.video-ball,L_image,.dots-left ,.dots-right .footer-text, .bantImg {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1391px) and (max-width: 1600px) {
+/*.contact-header-about{
+    font: Lighter 18px "Exo 2";
+} */
+/* .menu-header-text{
+    font-size: 19px;
+} */
+.menu-header-wrap{
+    margin-left: -25px;
+}
+    .tigerImg{
+        right: 177px;
+    }
+    .VideoImg{
+        right: 14%;
+    }
+    .record-button{
+        margin-left: 0px;
+    }
+    .squrImg{
+        top: 192px;
+    }
+    .careful-dev-content{
+        margin-bottom: 58%;
+    }
+    .circleRed{
+        left: -74px;
+    }
+    .circleOrange{
+        top: -24px;
+    }
+    .get-baby-zagolovok-content{
+        top: 12%;
+    }
+    .developing-activ-tittle{
+        margin-bottom: 35px;
+    }
+        /*.get-baby-content__card_tittle{
+            font-size: 26px;
+        } */
+/*.get-baby-content__card_text,.exactly-babyClub-card-content-zag{
+    font-size: 21px;
+} */
+/* .exactly-babyClub-card-content-text{
+    font-size: 26px;
+}*/
+    .card-foot{
+        margin-top: 45px;
+    }
+    .get-baby-paginator-container{
+           margin-bottom: 115px;
+   }
+.menu-header{
+    margin-right: 194px;
+}
+.developing-card-text{
+    padding: 4px 19px;
+}
+/* .card-text{
+    font: 300 17px "Exo 2";
+    color: #FFFFFF;
+    margin-top: 11px;
+}
+.educators-tittle-block-text{
+    font: 300 27px "Exo 2";
+    color: #FFFFFF;
+    margin-top: 25px;
+     max-width: none;
+}
+.educators-content-card-description{
+    font: 300 28px "Exo 2";
+}
+.educators-content-card-name{
+    font: 500 40px "Exo 2";
+}
+.reviews-content-card-content.hidden {
+    height: 59px;
+    font-size: 24px;
+    text-size-adjust: none;
+}
+.reviews-content-card-content{
+    font-size: 24px;
+    text-size-adjust: none;
+} */
+.main-grid {
+    grid-template-columns: 1fr 7fr 1fr;
+}
+.contacts-head {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+}
+@media (min-width: 1311px) {
+
+.child-img {
+left: 0px;
+}
+
+    .record-button{
+        margin-left: 0px;
+    }
+
+.my-slider__item {
+width: 47%;
+}
+
+.my-slider__item__leftt {
+left: -26%;
+}
+
+.my-slider__item__right {
+right: -26%;
+}
+
+
+
+
+
+
+
+}
+@media (min-width: 1200px) and (max-width: 1390px) {
+.contact-header,.child-img{
+display: none;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr;
+}
+.wrap-logo{
+background: url(img/logo-1.png) no-repeat;
+width: 182px;
+height: 95px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+}
+.menu-header-wrap {
+display: none;
+opacity: 0;
+}
+.menu-header-button,.contacts{
+display: none;
+}
+.mobile-menu {
+display: block;
+position: absolute;
+right: 40px;
+top: 40px;
+margin-right: 50px;
+}
+.header {
+background: white;
+border-bottom: 1px gainsboro solid;
+}
+.footer-mobile {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.footerImg {
+background: url(img/whtrbt-logo.svg) no-repeat 100% 50%;
+height: 31px;
+margin-left: 14px;
+}
+
+.footer-logo-container {
+grid-area: 1 / 1 / 2 / 3;
+margin-left: 11%;
+}
+.footer-mobile {
+display: grid;
+}
+
+.footer-logo{
+grid-area: 1 / 3 / 3 / 2;
+background: url(img/logo111.svg) no-repeat 50% 66%;
+width: 424px;
+height: 52px;
+margin-top: 33px;
+background-size: 364px;
+
+margin-left: 40px;
+}
+
+.mobile-footer {
+grid-area: 2 / 2 / 3 / 3;
+display: flex;
+margin-top: 40px;
+margin-bottom: 56px;
+flex-wrap: wrap;
+}
+.mobile-footer-about-item {
+display: flex;
+align-items: center;
+color: black;
+font-size: 17px;
+}
+.mobile-footer-about-item.addr {
+min-width: 410px;
+margin-left: 10px;
+}
+.mobile-footer-about-item.phone {
+min-width: 230px;
+margin-left: 20px;
+}
+.mobile-footer-about-item.mail {
+min-width: 168px;
+margin-left: 10px;
+}
+.contact-header, .menu-header-button-container ,.footer,.yaand{
+display: none;
+}
+.main-grids {
+grid-template-columns: 1fr 4fr 1fr;
+}
+.my-slider__item {
+width: 63%;
+}
+
+.my-slider__item__right {
+width: 36%;
+}
+.my-slider__item__leftt {
+width: 36%;
+}
+.icon1:hover{
+background: none;
+}
+.icon2:hover{
+background: none;
+}
+.icon3:hover{
+background: none;
+}
+.icon4:hover{
+background: none;
+}
+.icon5:hover{
+background: none;
+}
+.icon6:hover{
+background: none;
+}
+.icon7:hover{
+background: none;
+}
+.icon8:hover{
+background: none;
+}
+
+
+
+
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+
+.educators-content-cards {
+grid-template-columns: 1fr 1fr;
+}
+.developing-card{
+margin-top:50px;
+}
+.educators-content {
+margin-top: 50px;
+}
+.bright-moments-tittle-block-content {
+margin-bottom: 50px;
+}
+.video-grid {
+margin-top: 50px;
+}
+.footerImg {
+background: url(img/whtrbt-logo.svg) no-repeat 0% 50%;
+width: 700px;
+height: 93px;
+margin-top: 49px;
+background-size: 700px;
+
+}
+.main-grid {
+grid-template-columns: 1fr 12fr 1fr;
+}
+.mobile-footer {
+grid-area: 2 / 2 / 3 / 3;
+display: flex;
+margin-top: 40px;
+margin-bottom: 56px;
+flex-wrap: wrap;
+justify-content: space-around;
+max-width: 740px;
+}
+.contact-header, .menu-header-button-container {
+display: none;
+}
+
+.letter-img, .dots-img, .child-img,
+.footer, .redballIMG, .contact-header, .contacts, .squrImg, .AngImg, .brightCircle, .moments-dots, .VideoImg,
+.tigerImg, .reviews-letter-img, .yaand,.video-dots,L_image,.video-ball,.dots-left ,.dots-right .footer-text, .birdImg, .bantImg {
+display: none;
+}
+.get-baby-zagolovok-content br,
+.bright-moments-tittle-block-content br.exactly-babyClub-zagolovok br,
+.developing-activ-tittle br,
+.educators-tittle-block-tittle br {
+display: none;
+}
+.developing-card-img {
+display: none;
+}
+
+.exactly-image1 {
+display: none;
+}
+.careful-dev {
+background: none;
+margin-bottom: 15%;
+}
+.careful-dev-grid {
+grid-template-columns: 1fr;
+grid-template-rows: min-content;
+margin-top: 10%;
+}
+.get-baby {
+background: none;
+align-items: center;
+}
+
+.get-baby-paginator-container {
+position: absolute;
+
+bottom: 1%;
+margin: 0;
+}
+
+.get-baby-content {
+left: 5%;
+top: calc(34% - 188px);
+}
+
+
+
+.get-baby-zagolovok-content {
+font: 500 73px "Exo 2";
+left: 5%;
+top: -2%;
+}
+
+
+.get-baby-content__card.big {
+min-height: 646px !important;
+width: 515px;
+}
+.header{
+background: white;
+border-bottom: 1px gainsboro solid;
+}
+.wrap-logo{
+background: url(img/logo-1.png) no-repeat;
+width: 182px;
+height: 95px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+}
+
+.mobile-menu {
+display: block;
+position: absolute;
+right: 40px;
+top: 40px;
+margin-right: 70px;
+}
+
+
+.careful-dev {
+background: none;
+min-height: auto;
+}
+
+
+
+
+.menu-header-wrap {
+display: none;
+opacity: 0;
+}
+
+.circleRed {
+width: 200px;
+}
+
+
+
+.circleOrange {
+top: -47px;
+}
+
+
+.get-baby-content__card_text {
+padding: 0px 8px;
+}
+
+.get-baby-content__card_text {
+font: Lighter 34px "Exo 2";
+padding: 0px 24px;
+}
+.get-baby-content__card_tittle {
+font: Lighter 42px "Exo 2";
+}
+
+
+.my-slider-paginator-container {
+margin-top: 0px;
+}
+
+.developing-card-text {
+padding: 0 10px;
+margin: 30px;
+}
+
+.developing-card {
+width: auto;
+height: auto;
+}
+
+.card-text {
+font: 100 36px "Exo 2";
+margin-top: 20px;
+}
+
+.educators-tittle-block-text {
+max-width: 100%;
+font-size: 36px;
+}
+
+.card-tittle {
+font: 600 57px "Exo 2";
+}
+
+.card-foot {
+font: 500 36px "Exo 2";
+}
+
+.educators-content-card-description {
+padding: 24px 15px;
+font: 300 39px "Exo 2";
+}
+.video-tittle, .bright-moments-tittle-block-content, .educators-tittle-block-tittle, .exactly-babyClub-zagolovok-content, .developing-activ-tittle {
+font: 500 73px "Exo 2";
+}
+.educators-content-card-name {
+font: 500 41px "Exo 2";
+padding: 0px 13px;
+}
+.my-slider__item {
+width: 68%;
+
+}
+
+.my-slider__item__leftt {
+left: -36%;
+}
+
+.my-slider__item__right {
+right: -36%;
+}
+.excursion-frame {
+zoom: 55%;
+}
+
+
+
+.video-grid {
+zoom: 70%;
+grid-area: 2 / 1 / 3 / 4;
+padding: 0px 10px;
+}
+.reviews-tittle {
+font: 500 71px "Exo 2";
+}
+.excursion-tittle {
+zoom: 85%;
+}
+.my-slider {
+height: 470px;
+}
+.card-head-name {
+font: 600 30px "Exo 2";
+}
+.card-head-date {
+font: 100 24px "Exo 2";
+}
+.reviews-content-card-content.hidden {
+  font-size: 42px;
+  height: 107px;
+text-size-adjust: none;
+-moz-text-size-adjust:none;
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+}
+
+.card-head-date {
+  margin-top: 10px;
+}
+.reviews-content-card-content {
+  font-size: 42px;
+text-size-adjust: none;
+-moz-text-size-adjust:none;
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+}
+.card-head-expand {
+font-size: 35px;
+}
+.tittle{
+font: Lighter 54px "Exo 2";
+}
+.descriptionUP {
+font: 100 43px "Exo 2";
+}
+
+.exactly-babyClub-card-content-text {
+font-size: 32px;
+}
+
+.exactly-babyClub-zagolovok {
+margin-top: 12%;
+}
+
+.exactly-babyClub-card-content-zag h3 {
+font-size: 33px;
+}
+.exactly-babyClub-card {
+grid-template-columns: 1fr;
+}
+#butt {
+margin-left: 1px;
+width: 326px;
+height: 78px;
+}
+.footer-mobile {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.mobile-footer {
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+.mobile-footer > div {
+margin-top: 40px;
+}
+
+.mobile-footer-about {
+display: flex;
+flex-direction: row;
+align-items: center;
+font: Lighter 12px "Exo 2";
+
+}
+.mobile-footer-about-item {
+display: flex;
+align-items: center;
+color: black;
+font-size: 45px;
+font-weight: 300;
+}
+
+.mobile-footer-about-item > img {
+height: 67px;
+margin-right: 25px;
+}
+
+.footer-logo{
+grid-area: 1 / 3 / 3 / 2;
+background: url(img/logo111.svg) no-repeat 101% 66%;
+width: 760px;
+height: 52px;
+margin-top: 65px;
+background-size: 650px;
+}
+
+.contact-header, .menu-header-button-container {
+display: none;
+}
+.main-grids {
+grid-template-columns: 1fr 4fr 1fr;
+}
+.mobile-footer-about-item.phone{
+margin-right: 65px;
+}
+.record-button a {
+font: Bold 34px "Exo 2";
+}
+.my-slider__item__right-button{
+margin-left: 0;
+}
+.my-slider__item__left-button{
+margin-right: 0;
+}
+.icon1{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon2{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon3{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon4{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon5{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon6{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon7{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon8{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon1-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: 0px;
+
+}
+.icon2-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon3-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon4-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon5-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon6-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon7-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;;
+top: -13px;
+left: -10px;
+}
+.icon8-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+
+
+.icon1:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon2:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon3:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon4:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon5:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon6:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon7:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon8:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+
+
+
+}
+@media (min-width: 250px) and (max-width: 767px) {
+.wrap-logo{
+background: url(img/logo-1.png) no-repeat;
+width: 182px;
+height: 95px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+}
+
+.mobile-menu {
+display: block;
+position: absolute;
+right: 40px;
+top: 40px;
+margin-right: 90px;
+}
+
+
+.careful-dev {
+background: none;
+min-height: auto;
+}
+
+.educators-tittle-block-text {
+max-width: 100%;
+font-size: 36px;
+}
+
+.menu-btn.menu-active span:before {
+width: 10px;
+transform: rotate(-45deg);
+transform-origin: left bottom;
+}
+
+
+.menu-btn.menu-active span:after {
+width: 10px;
+transform: rotate(45deg);
+transform-origin: left top;
+}
+
+.menu-header-wrap {
+display: none;
+opacity: 0;
+}
+
+.circleRed {
+width: 200px;
+}
+.educators-content-card-description {
+padding: 24px 15px;
+font: 300 39px "Exo 2";
+}
+.video-tittle, .bright-moments-tittle-block-content, .educators-tittle-block-tittle, .exactly-babyClub-zagolovok-content, .developing-activ-tittle {
+font: 500 65px "Exo 2";
+}
+
+.icon1{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon2{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon3{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon4{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon5{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon6{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon7{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon8{
+background: url("img/untitled.png");
+background-size: 69px;
+}
+.icon1-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: 0px;
+
+}
+.icon2-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon3-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon4-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon5-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon6-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+.icon7-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;;
+top: -13px;
+left: -10px;
+}
+.icon8-active{
+background: url("img/untitled2.png") no-repeat;
+background-size: 90px;
+top: -13px;
+left: -10px;
+}
+
+
+.icon1:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon2:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon3:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon4:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon5:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon6:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon7:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+.icon8:hover{
+background: url("img/untitled.png");
+background-size: 70px;
+}
+
+
+.educators-content-cards {
+grid-template-columns: 1fr ;
+}
+.get-baby-zagolovok-content br,
+.bright-moments-tittle-block-content br.exactly-babyClub-zagolovok br,
+.developing-activ-tittle br,
+.educators-tittle-block-tittle br {
+display: none;
+}
+.footer-mobile {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.mobile-footer {
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+.mobile-footer > div {
+margin-top: 40px;
+}
+
+.mobile-footer-about {
+display: flex;
+flex-direction: row;
+align-items: center;
+font: Lighter 12px "Exo 2";
+
+}
+.mobile-footer-about-item {
+display: flex;
+align-items: center;
+color: black;
+font-size: 43px;
+}
+
+.mobile-footer-about-item > img {
+height: 50px;
+margin-right: 25px;
+}
+
+.reviews-tittle {
+font: 500 71px "Exo 2";
+}
+
+.contact-header, .menu-header-button-container {
+display: none;
+}
+.main-grids {
+grid-template-columns: 1fr 4fr 1fr;
+}
+.mobile-footer-about-item.phone{
+margin-right: 65px;
+}
+
+.main-grid {
+grid-template-columns: 1fr 12fr 1fr;
+}
+
+
+.my-slider-paginator-container {
+margin-top: 0px;
+}
+
+
+.exactly-babyClub-card {
+grid-template-columns: 1fr;
+}
+.developing-card-img {
+display: none;
+}
+
+.exactly-image1 {
+display: none;
+}
+
+.careful-dev-grid {
+grid-template-columns: 1fr;
+grid-template-rows: min-content;
+margin-top: 10%;
+}
+
+
+.get-baby-zagolovok-content {
+top: 4%!important;
+}
+.letter-img, .dots-img, .child-img,
+.footer, .redballIMG, .contact-header, .contacts, .squrImg, .AngImg, .brightCircle, .moments-dots, .VideoImg,
+.tigerImg, .reviews-letter-img, .yaand,.video-dots,.video-ball,L_image,.dots-left ,.dots-right .footer-text, .birdImg, .bantImg {
+display: none;
+}
+
+.careful-dev {
+background: none;
+margin-bottom: 15%;
+}
+.get-baby {
+background: none;
+align-items: center;
+}
+
+.get-baby-paginator-container {
+position: absolute;
+
+bottom: 1%;
+margin: 0;
+}
+
+.get-baby-content {
+left: 5%;
+top: calc(40% - 188px);
+margin-top: 20px;
+}
+
+.excursion-frame {
+zoom: 55%;
+}
+
+
+
+.video-grid {
+zoom: 70%;
+grid-area: 2 / 1 / 3 / 4;
+padding: 0px 10px;
+}
+
+.excursion-tittle {
+zoom: 80%;
+}
+
+
+.get-baby-zagolovok-content {
+font: 500 73px "Exo 2";
+left: 5%;
+top: -2%;
+}
+
+
+.get-baby-content__card.big {
+min-height: 646px !important;
+width: 515px;
+}
+.header{
+background: white;
+border-bottom: 1px gainsboro solid;
+}
+#butt {
+margin-left: 1px;
+width: 326px;
+height: 78px;
+}
+.record-button a {
+font: Bold 34px "Exo 2";
+}
+
+.get-baby-content__card_text {
+padding: 0px 8px;
+}
+
+.get-baby-content__card_text {
+font: Lighter 34px "Exo 2";
+padding: 0px 24px;
+}
+.get-baby-content__card_tittle {
+font: Lighter 42px "Exo 2";
+}
+
+.developing-activ-tittle {
+margin-right: 26%;
+}
+.card-foot {
+font: 500 36px "Exo 2";
+}
+
+.developing-card-text {
+padding: 0 10px;
+margin: 30px;
+}
+
+.developing-card {
+width: auto;
+height: auto;
+}
+
+.card-text {
+font: 100 36px "Exo 2";
+margin-top: 20px;
+}
+
+.tittle{
+font: Lighter 54px "Exo 2";
+}
+.card-tittle {
+font: 600 57px "Exo 2";
+}
+
+.my-slider__item {
+width: 77%;
+
+}
+
+.my-slider__item__leftt {
+left: -52%;
+}
+
+.my-slider__item__right {
+right: -52%;
+}
+.educators-content-card-name {
+font: 500 41px "Exo 2";
+padding: 0px 13px;
+}
+.my-slider {
+height: 390px;
+}
+.card-head-name {
+font: 600 30px "Exo 2";
+}
+.card-head-date {
+font: 100 24px "Exo 2";
+}
+.reviews-content-card-content.hidden {
+font-size: 42px;
+height: 107px;
+text-size-adjust: none;
+-moz-text-size-adjust:none;
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+}
+
+.card-head-date {
+margin-top: 10px;
+}
+.reviews-content-card-content {
+font-size: 42px;
+text-size-adjust: none;
+-moz-text-size-adjust:none;
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+}
+
+.card-head-expand {
+font-size: 35px;
+}
+
+
+.exactly-babyClub-card-content-text {
+font-size: 30px;
+}
+
+.exactly-babyClub-zagolovok {
+margin-top: 12%;
+}
+
+.exactly-babyClub-card-content-zag h3 {
+font-size: 30px;
+}
+}
